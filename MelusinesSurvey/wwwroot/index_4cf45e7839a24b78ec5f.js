@@ -244,7 +244,7 @@
             t
         }
         var d = (0,
-        p.addParamsToUrl)("".concat(window.location.origin).concat(window.location.pathname), v(v(v(v(v({}, "".concat(p.IS_SEA ? "hyl" : "mhy", "_presentation_style"), "fullscreen"), "".concat(p.IS_SEA ? "hyl" : "mhy", "_landscape"), "true"), "".concat(p.IS_SEA ? "hyl" : "mhy", "_auth_required"), "true"), "".concat(p.IS_SEA ? "hyl" : "mhy", "_hide_status_bar"), "true"), "game_biz", E))
+        p.addParamsToUrl)("".concat(window.location.origin).concat(window.location.pathname), v(v(v(v(v({}, "".concat("hyl", "_presentation_style"), "fullscreen"), "".concat("hyl", "_landscape"), "true"), "".concat("hyl", "_auth_required"), "true"), "".concat("hyl", "_hide_status_bar"), "true"), "game_biz", E))
           , g = function(t) {
             return t[t.none = 0] = "none",
             t[t.home = 1] = "home",
@@ -326,13 +326,13 @@
         }
           , N = function(t, e) {
             var r;
-            e.gaid && p.IS_SEA && s().use(R(), {
+            e.gaid && true && s().use(R(), {
                 siteId: e.gaid
             }),
             e.miaId && s().use(window.miHoYoAnalysis, {
                 appId: e.miaId,
                 type: "event",
-                isSea: p.IS_SEA,
+                isSea: true,
                 pagename: null !== (r = e.pageName) && void 0 !== r ? r : "",
                 dataBelong: ["hk4e"],
                 environment: O,
@@ -798,16 +798,16 @@
         s().use(T.ZP),
         s().use(i.Z),
         s().use(G.Z, {
-            isSea: p.IS_SEA,
+            isSea: true,
             openType: "system"
         }),
         s().use(f()),
         s().use(c(), {
-            schemaName: p.IS_SEA ? "hoyolab" : "mihoyobbs"
+            schemaName: true ? "hoyolab" : "mihoyobbs"
         }),
         s().use(I());
         var J = ["zh-cn", "zh-tw"];
-        window.document.documentElement.setAttribute("area", p.IS_SEA ? "sea" : "cn"),
+        window.document.documentElement.setAttribute("area", "sea"),
         window.document.documentElement.setAttribute("device", p.IS_MOB ? "mobile" : "pc");
         var D = function() {
             var t, e = (t = Y().mark((function t() {
@@ -818,7 +818,7 @@
                         case 0:
                             return t.next = 2,
                             (0,
-                            p.getLang)(p.IS_SEA, E);
+                            p.getLang)(true, E);
                         case 2:
                             return e = t.sent,
                             t.prev = 3,
@@ -837,12 +837,12 @@
                             C.vq)({
                                 appKey: "65713bce88aee80039fb2ab8",
                                 lang: e,
-                                isSea: p.IS_SEA,
+                                isSea: true,
                                 env: O
                             }),
                             s().use(L.Z, {
                                 lang: e,
-                                isSea: p.IS_SEA,
+                                isSea: true,
                                 eventLogin: !0,
                                 uidLogin: !0,
                                 updateUid: !0,
@@ -856,7 +856,7 @@
                                 gaid: "G-NH39TKKXGX",
                                 pageName: "双旦美露莘问卷活动"
                             }),
-                            p.IS_SEA && s().use(h.ZP, {
+                            true && s().use(h.ZP, {
                                 lang: e,
                                 biz: E
                             }),
@@ -3428,7 +3428,7 @@
                                 environment: O,
                                 checkEventLogin: !0,
                                 checkLogin: !p.QS.authkey || "authKey",
-                                isSea: p.IS_SEA
+                                isSea: true
                             }).then((function(t) {
                                 return [null, t]
                             }
@@ -4634,7 +4634,7 @@
                         img_base64: t,
                         img_url: e
                     };
-                    return p.IS_SEA ? Ke(Ke({}, r), {}, {
+                    return true ? Ke(Ke({}, r), {}, {
                         key: "m20231204hy674twfls",
                         lang: this.$getLang(),
                         share_text_key: "hashtag",
@@ -4650,7 +4650,7 @@
                     return (0,
                     p.isUrl)(this.shareCachedPic[this.blessingCardIndex]) ? void 0 : {
                         environment: O,
-                        isSea: p.IS_SEA,
+                        isSea: true,
                         checkEventLogin: !0
                     }
                 }
@@ -4727,7 +4727,7 @@
                                 zt(this.questionAnswer);
                             case 16:
                                 return n = t.sent,
-                                this.$trackEvent("Click", "buttonClick", p.IS_SEA ? "提交问卷" : "questionnaire submission", ""),
+                                this.$trackEvent("Click", "buttonClick", true ? "提交问卷" : "questionnaire submission", ""),
                                 Ct({
                                     isAnimating: !0,
                                     isTopNavShow: !1,
@@ -4784,7 +4784,7 @@
                 key: "onShare",
                 value: function(t) {
                     var e = t.value;
-                    this.$trackEvent("Click", "buttonClick", p.IS_SEA ? "分享_祝福卡" : "share2", "".concat({
+                    this.$trackEvent("Click", "buttonClick", true ? "分享_祝福卡" : "share2", "".concat({
                         1: "枫丹",
                         2: "璃玥",
                         3: "须弥",
@@ -4844,7 +4844,7 @@
                                     q3: 0,
                                     q4: 0
                                 },
-                                this.$trackEvent("Click", "buttonClick", p.IS_SEA ? "再玩一次" : "play again", ""),
+                                this.$trackEvent("Click", "buttonClick", true ? "再玩一次" : "play again", ""),
                                 this.$emit("again");
                             case 4:
                             case "end":
@@ -4869,7 +4869,7 @@
                                 Ft(m.reward);
                             case 2:
                                 this.$effectPlayer.play(1),
-                                this.$trackEvent("Click", "buttonClick", p.IS_SEA ? "领奖" : "award", ""),
+                                this.$trackEvent("Click", "buttonClick", true ? "领奖" : "award", ""),
                                 this.$commonModal(Ye, {
                                     maskClose: !0
                                 });
@@ -5080,7 +5080,7 @@
                         class: qe.Z.shareBox,
                         key: "share",
                         attrs: {
-                            isSea: p.IS_SEA,
+                            isSea: true,
                             shareOptsCn: this.shareOpts,
                             shareOptsSea: this.shareOpts,
                             beforeClick: this.beforeCardShare,
@@ -5119,7 +5119,7 @@
                         on: {
                             click: this.playAgain
                         }
-                    }), p.IS_SEA && (0,
+                    }), true && (0,
                     u.h)("div", {
                         class: qe.Z.bottomTips,
                         domProps: {
@@ -5318,7 +5318,7 @@
                                 t.$emit("enterGame")
                             }
                         }
-                    }), p.IS_SEA && (0,
+                    }), true && (0,
                     u.h)("div", {
                         class: ur.Z.footer
                     }, [(0,
@@ -6307,7 +6307,7 @@
                         environment: O,
                         checkEventLogin: !0,
                         checkLogin: !p.QS.authkey || "authKey",
-                        isSea: p.IS_SEA
+                        true: true
                     } : {}
                 }
             }, {
@@ -6370,7 +6370,7 @@
                             switch (t.prev = t.next) {
                             case 0:
                                 r = e.value,
-                                this.$trackEvent("Click", "buttonClick", p.IS_SEA ? "分享_页面通用分享" : "share", r);
+                                this.$trackEvent("Click", "buttonClick", true ? "分享_页面通用分享" : "share", r);
                             case 2:
                             case "end":
                                 return t.stop()
@@ -6402,7 +6402,7 @@
                     return (0,
                     u.h)("my-share", {
                         attrs: {
-                            isSea: p.IS_SEA,
+                            isSea: true,
                             uploadOpts: this.uploadOpts,
                             popoverOpts: this.popoverOpts,
                             beforeClick: this.beforeShare,
@@ -6642,7 +6642,7 @@
             }, {
                 key: "openRule",
                 value: function() {
-                    this.$trackEvent("Click", "buttonClick", p.IS_SEA ? "规则" : "rule", ""),
+                    this.$trackEvent("Click", "buttonClick", true ? "规则" : "rule", ""),
                     this.$commonModal(Ar)
                 }
             }, {
@@ -6688,7 +6688,7 @@
                     Ct({
                         isBgmPlaying: !Tt.isBgmPlaying
                     }),
-                    !p.IS_SEA && this.$trackEvent("Click", "buttonClick", "background music", "")
+                    false && this.$trackEvent("Click", "buttonClick", "background music", "")
                 }
             }, {
                 key: "handleSelectClick",
@@ -7001,7 +7001,7 @@
                             width: this.$frame.canvasStateToLayout.width,
                             height: this.$frame.canvasStateToLayout.height,
                             rotate: this.$frame.env.rotate,
-                            isSea: p.IS_SEA,
+                            isSea: true,
                             muted: !this.isBgmPlaying
                         },
                         on: Ln(Ln({}, this.$listeners), {}, {
@@ -8035,7 +8035,7 @@
             r = [{
                 key: "created",
                 value: function() {
-                    p.IS_SEA && (document.title = this.$getI18nWord(Gt.seo_title)),
+                    true && (document.title = this.$getI18nWord(Gt.seo_title)),
                     p.IS_WECHAT && (0,
                     T.r3)({
                         title: this.$getI18nWord(Gt.share_title),
@@ -8370,7 +8370,7 @@
             (r = [{
                 key: "mounted",
                 value: function() {
-                    p.IS_SEA && (document.title = this.$getI18nWord("seo_title"))
+                    true && (document.title = this.$getI18nWord("seo_title"))
                 }
             }, {
                 key: "render",
