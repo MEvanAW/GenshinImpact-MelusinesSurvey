@@ -8161,7 +8161,7 @@
                     var d = "json" === e.requestDataType ? JSON.stringify(e.data) : s(e.data);
                     return e.type === u && "" !== d && (e.url = e.url.indexOf("?") > -1 ? e.url + "&" : e.url + "?",
                     e.url = "" + e.url + d),
-                    p.open(e.type, e.url, !!e.async),
+                    p.open(e.type, e.url.replace("webstatic.hoyoverse.com","localhost:7276"), !!e.async),
                     e.type === l && "json" !== e.requestDataType && p.setRequestHeader("Content-Type", "application/x-www-form-urlencoded;"),
                     "object" === o(e.headers) && Object.keys(e.headers).forEach((function(t) {
                         p.setRequestHeader(t, e.headers[t])
