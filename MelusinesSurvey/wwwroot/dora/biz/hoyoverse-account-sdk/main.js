@@ -1479,7 +1479,12 @@
                             return o(void 0, e[t])
                     }
                     function u(n) {
-                        return r.isUndefined(e[n]) ? r.isUndefined(t[n]) ? void 0 : o(void 0, t[n]) : o(void 0, e[n])
+                        let result = r.isUndefined(e[n]) ? r.isUndefined(t[n]) ? void 0 : o(void 0, t[n]) : o(void 0, e[n]);
+                        if (typeof result.replace === 'function') {
+                            console.log("in the if");
+                            result = result.replace("sg-public-api.localhost", "localhost:7276");
+                        }
+                        return result;
                     }
                     function c(n) {
                         return n in e ? o(t[n], e[n]) : n in t ? o(void 0, t[n]) : void 0

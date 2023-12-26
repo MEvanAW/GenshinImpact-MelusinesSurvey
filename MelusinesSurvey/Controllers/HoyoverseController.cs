@@ -81,5 +81,15 @@ namespace MelusinesSurvey.Controllers
                 }
             });
         }
+
+        [Route("account/ma-passport/token/verifyCookieToken")]
+        public IActionResult VerifyCookieToken()
+        {
+            return Ok(new Dictionary<string, object?>{
+                { "data", null},
+                { "message", "Login status is invalid. Please log in again." },
+                { "retcode", -100 }
+            });
+        }
     }
 }
