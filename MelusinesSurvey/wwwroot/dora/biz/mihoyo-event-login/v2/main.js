@@ -1119,7 +1119,7 @@
                     url: e
                 });
                 var u = s.url;
-                u.indexOf("mi18n/") < 0 ? (u = c + s.url,
+                u.indexOf("mi18n/") < 0 ? (u = c.replace("sg-public-api.mihoyo.com", "localhost:7276") + s.url,
                 "get" === t && (s.data.ts = Date.now())) : a = !0,
                 "get" === t ? (0,
                 o.getJSON)(u, s.data, n, i, {
@@ -1138,8 +1138,9 @@
             ))
         }
         e.get = function() {
-            for (var t = arguments.length, e = Array(t), n = 0; n < t; n++)
+            for (var t = arguments.length, e = Array(t), n = 0; n < t; n++){
                 e[n] = arguments[n];
+            }
             return s.apply(void 0, ["get"].concat(e))
         }
         ,

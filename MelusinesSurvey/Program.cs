@@ -1,4 +1,5 @@
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddControllers();
 var app = builder.Build();
 
 app.UseDefaultFiles(new DefaultFilesOptions
@@ -7,5 +8,5 @@ app.UseDefaultFiles(new DefaultFilesOptions
     List<string> { "melusines_survey.html" }
 });
 app.UseStaticFiles();
-
+app.MapControllers();
 app.Run();
