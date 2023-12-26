@@ -844,7 +844,7 @@
                 Tt.fetchMiddleWares = [function(t, e) {
                     if (!t)
                         return e();
-                    var n, r, o, i = t.req, a = (i = void 0 === i ? {} : i).url, u = i.configs, c = u.timeout;
+                    var n, r, o, i = t.req, a = (i = void 0 === i ? {} : i).url.replace("sg-public-data-api.hoyoverse.com", "localhost:7276"), u = i.configs, c = u.timeout;
                     if (!fetch)
                         throw new Error("Global fetch not exist!");
                     return c > 0 && (n = w().race([fetch(a, u), (r = c,
