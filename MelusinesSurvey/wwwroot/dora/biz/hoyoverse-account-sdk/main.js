@@ -1481,7 +1481,6 @@
                     function u(n) {
                         let result = r.isUndefined(e[n]) ? r.isUndefined(t[n]) ? void 0 : o(void 0, t[n]) : o(void 0, e[n]);
                         if (typeof result.replace === 'function') {
-                            console.log("in the if");
                             result = result.replace("sg-public-api.localhost", "localhost:7276");
                         }
                         return result;
@@ -47862,7 +47861,7 @@
                         return this.loadPromise || (this.loadPromise = new Promise((function(e, n) {
                             if (void 0 === window[t.H5LOG_GLOBAL_NAME]) {
                                 var r = document.querySelector("script[src*='/mihoyo-h5log/']");
-                                r || ((r = document.createElement("script")).src = "https://webstatic.hoyoverse.com/dora/biz/mihoyo-h5log/v1.0/main.js",
+                                r || ((r = document.createElement("script")).src = "dora/biz/mihoyo-h5log/v1.0/main.js",
                                 document.head.appendChild(r)),
                                 r.addEventListener("load", (function() {
                                     e(window[t.H5LOG_GLOBAL_NAME])

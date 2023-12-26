@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\dora\biz\mihoyo-h5log\v1.0\" />
   </ItemGroup>
 
 </Project>
