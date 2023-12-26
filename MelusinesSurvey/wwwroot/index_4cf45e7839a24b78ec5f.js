@@ -5306,19 +5306,7 @@
                     return (0,
                     u.h)("div", {
                         class: ur.Z.homePage
-                    }, [(0,
-                    u.h)("img", {
-                        key: "homeBtn",
-                        class: ur.Z.enterGameBtn,
-                        attrs: {
-                            src: this.$getI18nWord(Gt.enter_game_btn)
-                        },
-                        on: {
-                            click: function() {
-                                t.$emit("enterGame")
-                            }
-                        }
-                    }), true && (0,
+                    }, [true && (0,
                     u.h)("div", {
                         class: ur.Z.footer
                     }, [(0,
