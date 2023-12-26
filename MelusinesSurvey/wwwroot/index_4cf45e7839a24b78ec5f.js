@@ -5306,32 +5306,7 @@
                     return (0,
                     u.h)("div", {
                         class: ur.Z.homePage
-                    }, [true && (0,
-                    u.h)("div", {
-                        class: ur.Z.footer
-                    }, [(0,
-                    u.h)("div", {
-                        class: ur.Z.btn,
-                        on: {
-                            click: function() {
-                                return t.handleJump(t.$getI18nWord(Gt.privacy_policy_link), 1)
-                            }
-                        }
-                    }, [this.$getI18nWord(Gt.privacy_policy)]), (0,
-                    u.h)("div", {
-                        class: ur.Z.split
-                    }), (0,
-                    u.h)("div", {
-                        class: ur.Z.btn,
-                        on: {
-                            click: function() {
-                                return t.handleJump(t.$getI18nWord(Gt.terms_of_service_link), 2)
-                            }
-                        }
-                    }, [this.$getI18nWord(Gt.terms_of_service)]), (0,
-                    u.h)("div", {
-                        class: ur.Z.copyright
-                    }, [this.$getI18nWord(Gt.copyright)])])])
+                    }, [])
                 }
             }]) && lr(e.prototype, r),
             Object.defineProperty(e, "prototype", {
