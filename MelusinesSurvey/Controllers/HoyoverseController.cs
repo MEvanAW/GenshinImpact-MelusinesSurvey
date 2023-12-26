@@ -102,5 +102,11 @@ namespace MelusinesSurvey.Controllers
                 { "data", null }
             });
         }
+
+        [Route("api/11/envelope")]
+        public IActionResult Envelope()
+        {
+            return new StatusCodeResult(200);
+        }
     }
 }

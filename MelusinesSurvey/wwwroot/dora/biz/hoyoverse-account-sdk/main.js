@@ -52149,7 +52149,7 @@
                             f.useContext)().environment,
                             void 0 === window[v]) {
                                 var n = document.querySelector("script[src*='/mihoyo-analysis/']");
-                                n || ((n = document.createElement("script")).src = "https://webstatic.hoyoverse.com/dora/biz/mihoyo-analysis/v2/main.js",
+                                n || ((n = document.createElement("script")).src = "dora/biz/mihoyo-analysis/v2/main.js",
                                 document.head.appendChild(n)),
                                 n.addEventListener("load", (function() {
                                     t(window[v])
