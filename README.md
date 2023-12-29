@@ -1,5 +1,9 @@
 # Melusine's Survey (Genshin Impact)
 This is a partially working self-hosted Genshin Impact's web event ["Melusines' Survey"](https://act.hoyoverse.com/ys/event/e20231225melusine-questionnaire/index.html?game_biz=hk4e_global&hyl_presentation_style=fullscreen&hyl_auth_required=true&hyl_landscape=true&hyl_hide_status_bar=true&utm_source=launcher&utm_medium=banner). Well, [Ms. Aeval](https://genshin-impact.fandom.com/wiki/Aeval) and [Ms. Elphane](https://genshin-impact.fandom.com/wiki/Elphane)'s animation sure works!
+## Contents
+- [Screenshots](#sreenshots)
+- [How to Run](#how-to-run)
+- [Insights](#insights-from-this-events-javascripts)
 ## Sreenshots
 ![Ms. Aeval and Ms. Elphane in Normal Pose](Screenshots/webglCanvas-1.png)
 ![Ms. Elphane is Waving](Screenshots/webglCanvas-2.png)
@@ -9,6 +13,10 @@ This is a partially working self-hosted Genshin Impact's web event ["Melusines' 
 ![Login Form](Screenshots/login-2.png)
 ![Language Options](Screenshots/language.png)
 ![Event Rules](Screenshots/rules.png)
+## How to Run
+1. Install Visual Studio with ASP .NET Core if you haven't.
+2. Open MelusinesSurvey.sln
+3. Run debug or run release.
 ## Insights from This Event's JavaScripts
 * This web event uses Vue. It is possible that Hoyoverse also use Vue for their other web events.
 * This web event has development, test, prerelease, and production environments. It is possible that their other web events also have these environments.
